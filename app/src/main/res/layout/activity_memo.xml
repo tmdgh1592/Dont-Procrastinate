@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activity.MemoActivity"
+    android:orientation="vertical">
+
+
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="2dp"
+        android:layout_marginLeft="2dp"
+        android:layout_marginRight="2dp"
+        android:layout_marginBottom="2dp"
+        android:gravity="top"
+        app:cardUseCompatPadding="true"
+        app:cardElevation="8dp">
+
+        <EditText
+            android:id="@+id/memo_edit_text"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fontFamily="@font/hangeul_teol_gothic"
+            android:gravity="top"
+            android:background="@null"
+            android:singleLine="false"
+            android:layout_margin="6dp"
+            android:textSize="17sp"
+            android:hint="@string/memoEditTextHint"/>
+
+    </androidx.cardview.widget.CardView>
+
+
+
+</LinearLayout>

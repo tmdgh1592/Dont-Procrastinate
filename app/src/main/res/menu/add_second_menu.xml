@@ -1,0 +1,14 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/alarm_midnight"
+        android:title="자정 (AM 12 : 00)"/>
+    <item
+        android:id="@+id/alarm_morning"
+        android:title="아침 (AM 08 : 00)"/>
+    <item
+        android:id="@+id/alarm_user_control"
+        android:title="사용자 지정"/>
+    <item
+        android:id="@+id/alarm_no"
+        android:title="설정 안함"/>
+</menu>

@@ -1,0 +1,447 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:id="@+id/drawer"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:layout_gravity="start">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="200dp"
+                android:background="@color/white"
+                android:orientation="vertical">
+
+                <com.app.buna.dontdelay.CustomView.CircleImageView
+                    android:id="@+id/profile_image_view"
+                    android:layout_width="70dp"
+                    android:layout_height="70dp"
+                    android:src="@drawable/profile"
+                    android:layout_marginTop="20dp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginLeft="20dp"
+                    android:layout_gravity="center"/>
+
+                <TextView
+                    android:id="@+id/login_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@+id/profile_image_view"
+                    android:layout_marginLeft="13dp"
+                    android:layout_marginTop="27dp"
+                    android:textSize="13sp"
+                    android:visibility="gone"
+                    android:text="계정" />
+
+                <TextView
+                    android:id="@+id/email_text_view"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@+id/login_text"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginTop="24dp"
+                    android:textStyle="bold"
+                    android:visibility="gone"
+                    android:text="email" />
+
+                <TextView
+                    android:id="@+id/login_alert"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@+id/login_text"
+                    android:layout_marginLeft="12dp"
+                    android:layout_marginTop="45dp"
+                    android:textStyle="bold"
+                    android:text="로그인이 필요한 서비스입니다." />
+
+                <TextView
+                    android:id="@+id/name_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@+id/profile_image_view"
+                    android:layout_marginLeft="13dp"
+                    android:layout_marginTop="55dp"
+                    android:textSize="13sp"
+                    android:visibility="gone"
+                    android:text="이름" />
+
+                <TextView
+                    android:id="@+id/name_text_view"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@+id/name_text"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginTop="54dp"
+                    android:textStyle="bold"
+                    android:visibility="gone"
+                    android:text="익명" />
+
+
+                <TextView
+                    android:id="@+id/drawer_login"
+                    android:layout_width="95dp"
+                    android:layout_height="40dp"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginRight="20dp"
+                    android:clickable="true"
+                    android:gravity="center"
+                    android:textSize="16sp"
+                    android:textColor="@color/enableIconColor"
+                    android:background="?attr/selectableItemBackground"
+                    android:text="계정 추가 +"/>
+
+            </RelativeLayout>
+
+
+
+            <View
+                style="@style/divide_line_horizontal"
+                android:layout_marginRight="20dp"/>
+
+
+            <!-- 옵션 -->
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:id="@+id/option1"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:clickable="true"
+                    android:background="?attr/selectableItemBackground">
+                    <ImageView
+                        android:id="@+id/option1_image_view"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:layout_centerVertical="true"
+                        android:src="@drawable/drawer_all"
+                        android:layout_marginLeft="25dp"/>
+                    <TextView
+                        android:id="@+id/option1_text_view"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="전체 일정"
+                        android:layout_centerVertical="true"
+                        android:layout_toRightOf="@id/option1_image_view"
+                        android:fontFamily="@font/hangeul_teol_gothic"
+                        android:layout_marginLeft="20dp"/>
+                    <ImageView
+                        android:id="@+id/option1_check_image_view"
+                        android:layout_width="8dp"
+                        android:layout_height="8dp"
+                        android:background="@null"
+                        android:src="@drawable/option_check_circle"
+                        android:layout_toRightOf="@+id/option1_text_view"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="30dp"
+                        android:visibility="gone"/>
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/option2"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_alignTop="@id/option1"
+                    android:layout_marginTop="50dp"
+                    android:background="?attr/selectableItemBackground"
+                    android:clickable="true">
+
+                    <ImageView
+                        android:id="@+id/option2_image_view"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:layout_centerVertical="true"
+                        android:tint="@color/writeButtonColor"
+                        android:src="@drawable/drawer_today"
+                        android:layout_marginLeft="25dp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="20dp"
+                        android:layout_toRightOf="@id/option2_image_view"
+                        android:fontFamily="@font/hangeul_teol_gothic"
+                        android:text="캘린더로 보기" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/option3"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_alignTop="@id/option2"
+                    android:layout_marginTop="50dp"
+                    android:background="?attr/selectableItemBackground"
+                    android:clickable="true">
+
+                    <ImageView
+                        android:id="@+id/option3_image_view"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:layout_centerVertical="true"
+                        android:tint="@color/writeButtonColor"
+                        android:layout_marginLeft="25dp"
+                        android:src="@drawable/to_calendar" />
+                    <TextView
+                        android:id="@+id/option3_text_view"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="20dp"
+                        android:layout_toRightOf="@id/option3_image_view"
+                        android:fontFamily="@font/hangeul_teol_gothic"
+                        android:text="오늘 할 일" />
+                    <ImageView
+                        android:id="@+id/option3_check_image_view"
+                        android:layout_width="8dp"
+                        android:layout_height="8dp"
+                        android:background="@null"
+                        android:src="@drawable/option_check_circle"
+                        android:layout_toRightOf="@+id/option3_text_view"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="30dp"
+                        android:visibility="gone"/>
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/option4"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_alignTop="@id/option3"
+                    android:layout_marginTop="50dp"
+                    android:background="?attr/selectableItemBackground"
+                    android:clickable="true">
+
+                    <ImageView
+                        android:id="@+id/option4_image_view"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:layout_centerVertical="true"
+                        android:tint="@color/enableIconColor"
+                        android:src="@drawable/drawer_done"
+                        android:layout_marginLeft="25dp" />
+                    <TextView
+                        android:id="@+id/option4_text_view"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="20dp"
+                        android:layout_toRightOf="@id/option4_image_view"
+                        android:fontFamily="@font/hangeul_teol_gothic"
+                        android:text="완료" />
+                    <ImageView
+                        android:id="@+id/option4_check_image_view"
+                        android:layout_width="8dp"
+                        android:layout_height="8dp"
+                        android:background="@null"
+                        android:src="@drawable/option_check_circle"
+                        android:layout_toRightOf="@+id/option4_text_view"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="30dp"
+                        android:visibility="gone"/>
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/option5"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_alignTop="@id/option4"
+                    android:layout_marginTop="50dp"
+                    android:background="?attr/selectableItemBackground"
+                    android:clickable="true">
+
+                    <ImageView
+                        android:id="@+id/option5_image_view"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="25dp"
+                        android:src="@drawable/drawer_importance" />
+                    <TextView
+                        android:id="@+id/option5_text_view"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="20dp"
+                        android:layout_toRightOf="@id/option5_image_view"
+                        android:fontFamily="@font/hangeul_teol_gothic"
+                        android:text="중요" />
+                    <ImageView
+                        android:id="@+id/option5_check_image_view"
+                        android:layout_width="8dp"
+                        android:layout_height="8dp"
+                        android:background="@null"
+                        android:src="@drawable/option_check_circle"
+                        android:layout_toRightOf="@+id/option5_text_view"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="30dp"
+                        android:visibility="gone"/>
+                </RelativeLayout>
+
+            </RelativeLayout>
+
+
+
+
+            <View
+                style="@style/divide_line_horizontal"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:id="@+id/option7"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_alignTop="@id/option5"
+                    android:background="?attr/selectableItemBackground"
+                    android:clickable="true">
+
+                    <ImageView
+                        android:id="@+id/option7_image_view"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:layout_alignParentStart="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginStart="25dp"
+                        android:layout_marginLeft="25dp"
+                        android:src="@drawable/pin_icon"
+                        android:tint="@color/pin_icon_color" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="20dp"
+                        android:layout_toRightOf="@id/option7_image_view"
+                        android:fontFamily="@font/hangeul_teol_gothic"
+                        android:text="상단 탭에 일정 '고정'" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/option8"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_alignTop="@id/option5"
+                    android:background="?attr/selectableItemBackground"
+                    android:clickable="true">
+
+                    <ImageView
+                        android:id="@+id/option8_image_view"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:layout_alignParentStart="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginStart="25dp"
+                        android:layout_marginLeft="25dp"
+                        android:background="@null"
+                        android:src="@drawable/widget_icon"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="20dp"
+                        android:layout_toRightOf="@id/option8_image_view"
+                        android:fontFamily="@font/hangeul_teol_gothic"
+                        android:text="'오늘 할 일' 바탕화면에서 보기" />
+                </RelativeLayout>
+
+            </LinearLayout>
+
+            <View
+                style="@style/divide_line_horizontal"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"/>
+
+            <!--세번째 옵션-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:id="@+id/option6"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_alignTop="@id/option5"
+                    android:background="?attr/selectableItemBackground"
+                    android:clickable="true">
+
+                    <ImageView
+                        android:id="@+id/option6_image_view"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:layout_alignParentStart="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginStart="25dp"
+                        android:layout_marginLeft="25dp"
+                        android:src="@drawable/drawer_heart"
+                        android:tint="@color/bg_row_background" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="20dp"
+                        android:layout_toRightOf="@id/option6_image_view"
+                        android:fontFamily="@font/hangeul_teol_gothic"
+                        android:text="평점 남기기" />
+                </RelativeLayout>
+
+                <View
+                    style="@style/divide_line_horizontal"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp"/>
+
+            </LinearLayout>
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="8dp">
+
+                <ImageView
+                    android:id="@+id/drawer_config"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:clickable="true"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="8dp"
+                    android:layout_marginBottom="18dp"
+                    android:src="@drawable/config_icon"
+                    android:tint="@color/defaultDisableColor" />
+            </RelativeLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+
+
+</LinearLayout>

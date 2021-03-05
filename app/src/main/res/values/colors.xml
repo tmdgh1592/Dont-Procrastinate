@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#008577</color>
+    <color name="colorAccent">#6486A0</color>
+    <color name="white">#ffffff</color>
+    <color name="black">#000000</color>
+    <color name="doneTextColor">#E2E2E2</color>
+    <color name="editTextCursor">#353535</color>
+    <color name="addLayout">#E4E4E4</color>
+    <color name="nightBackgroundColor">#202F3B</color>
+    <color name="nightBackgroundColor2">#2C3E50</color>
+    <color name="morningBackgroundColor">#476A32</color>
+    <color name="recyclerViewItemColor">#263C4E</color>
+    <color name="writeButtonColor">#4288FF</color>
+    <color name="enableIconColor">#7f88ff</color>
+    <color name="textColorOne">#515151</color>
+    <color name="defaultDisableColor">#7A7A7A</color>
+    <color name="bg_row_background">#fa315b</color>
+    <color name="unselectedthemeborderColor">#BDBDBD</color>
+    <color name="calendarColor1">#F44336</color>
+    <color name="calendarColor2">#FF9800</color>
+    <color name="calendarColor3">#FFEB3B</color>
+    <color name="calendarColor4">#4288FF</color>
+    <color name="noti_dday_color">#8C9EFF</color>
+    <color name="noti_todo_content">#434343</color>
+    <color name="pin_icon_color">#D7B15F</color>
+    <color name="widget_icon_content">#A65E32</color>
+    <color name="unfixed_pin_color">#D5D5D5</color>
+    <color name="fixed_pin_color">#515151</color>
+    <color name="noti_app_name_color">#5F7CF5</color>
+    <color name="x_icon_color">#515151</color>
+    <color name="widget_describe_text_color">#515151</color>
+    <color name="widget_desc_background">#FFFFFF</color>
+
+</resources>

@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string-array name="howRepeat">
+        <item>일</item>
+        <item>주</item>
+        <item>개월</item>
+        <item>년</item>
+    </string-array>
+
+    <integer-array name="themeResId">
+        <item>@drawable/theme_example</item>
+        <!--<item>@drawable/theme_example</item>
+        <item>@drawable/theme_example</item>
+        <item>@drawable/theme_example</item>
+        <item>@drawable/theme_example</item>-->
+    </integer-array>
+
+    <string-array name="themeTitle">
+        <item>어두운 겨울밤</item>
+        <!--<item>어두운 여름밤</item>
+        <item>어두운 가을밤</item>
+        <item>어두운 봄밤</item>
+        <item>어두운 립밤</item>-->
+    </string-array>
+
+    <string-array name="morningPushTimeKeys">
+        <item>6시</item>
+        <item>6시 30분</item>
+        <item>7시</item>
+        <item>7시 30분</item>
+        <item>8시</item>
+    </string-array>
+
+    <string-array name="morningPushTimeValues">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+    </string-array>
+
+</resources>

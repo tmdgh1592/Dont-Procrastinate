@@ -1,0 +1,44 @@
+<resources>
+    <string name="app_name">미루지 마</string>
+    <!--app version-->
+    <string name="app_version">1.0.0</string>
+    <string name="developer_email">buna6492@gmail.com</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="backKeyComment">\'미루지 마\' 어플리케이션을 종료하시겠습니까?</string>
+    <string name="changePlanName">일정 이름 변경</string>
+    <string name="memoEditTextHint">메모 기록</string>
+    <string name="memoError">"메모 저장 과정에서 오류가 발생했습니다."</string>
+    <string name="error">에러가 발생했습니다.\n관리자에게 문의하세요."</string>
+    <string name="nullError">NULL 에러가 발생했습니다.\n관리자에게 문의하세요."</string>
+
+    <string name="widget_desc1">Step1. 바탕화면을 안쪽으로 당기거나, 또는 앱 아이콘을 길게 꾹 누르면 나타나는 위젯 버튼을 누른다.</string>
+    <string name="widget_desc2">Step2. 다양한 위젯 중에서 \'미루지 마\' 위젯을 길게 꾹 누른다.</string>
+    <string name="widget_desc3">Step3. 위젯을 원하는 위치에 내려놓고, 설치된 \'미루지 마\' 위젯을 통해 오늘 할 일을 한 눈에 확인한다.</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <!--facebook login-->
+    <string name="facebook_app_id">403784557171636</string>
+    <string name="fb_login_protocol_scheme">fb403784557171636</string>
+    <!--fcaebook login end-->
+
+    <!--kakaotalk login-->
+
+    <!--admob-->
+    <string name="admob_app_id">ca-app-pub-6856965594532028~8995663826</string>
+    <string name="banner_ad_unit_id_for_test">ca-app-pub-3940256099942544/6300978111</string>
+    <string name="native_ad_unit_id_for_test">ca-app-pub-3940256099942544/2247696110</string>
+    <string name="reward_ad_unit_id_for_test">ca-app-pub-3940256099942544/5224354917</string>
+
+    <string name="banner_ad_unit_id">ca-app-pub-6856965594532028/3569377400</string>
+    <string name="full_ad_unit_id">ca-app-pub-6856965594532028/3755604880</string>
+    <string name="native_ad_unit_id">ca-app-pub-6856965594532028/8482792738</string>
+    <string name="reward_ad_unit_id">ca-app-pub-6856965594532028/2647187718</string>
+
+    <string name="dialog_title_string">나만의 문구를 만들어보세요!</string>
+
+
+
+</resources>

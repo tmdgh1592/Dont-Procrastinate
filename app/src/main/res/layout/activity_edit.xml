@@ -1,0 +1,356 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activity.EditActivty"
+    android:orientation="vertical"
+    android:weightSum="10">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.9"
+        android:weightSum="10"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="35dp"
+            android:layout_weight="1"
+            android:layout_gravity="center"
+            android:clickable="true"
+            android:layout_marginLeft="12dp"
+            android:layout_marginRight="12dp"
+            android:layout_marginTop="12dp"
+            android:layout_marginBottom="12dp">
+
+            <ImageView
+                android:id="@+id/back_image_view"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_marginTop="5dp"
+                android:background="?attr/selectableItemBackgroundBorderless"
+                android:src="@drawable/go_back_icon_drawable"
+                android:clickable="true"/>
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="6.5"
+            android:gravity="left|center"
+            android:text="일정 수정"
+            android:textSize="22dp"
+            android:textColor="@color/textColorOne"
+            android:fontFamily="@font/hangeul_teol_gothic"/>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_weight="2.5"
+            android:weightSum="2.5"
+            android:layout_gravity="right|center">
+
+            <ImageView
+                android:id="@+id/edit_text_pin"
+                android:layout_height="35dp"
+                android:layout_width="35dp"
+                android:background="?attr/selectableItemBackgroundBorderless"
+                android:tint="@color/doneTextColor"
+                android:src="@drawable/tweezer_icon"/>
+
+            <ImageView
+                android:id="@+id/edit_text_share"
+                android:layout_height="35dp"
+                android:layout_width="35dp"
+                android:background="?attr/selectableItemBackgroundBorderless"
+                android:tint="@color/textColorOne"
+                android:layout_marginLeft="8dp"
+                android:src="@drawable/share_icon"/>
+    </LinearLayout>
+
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="4.3"
+        android:orientation="vertical"
+        android:weightSum="5">
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:paddingBottom="15dp">
+            <EditText
+                android:id="@+id/edit_to_do_content_edit_text"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="8dp"
+                android:layout_width="330dp"
+                android:layout_height="match_parent"
+                android:textColor="@color/textColorOne"
+                android:inputType="text"
+                android:textSize="18sp"
+                android:hint="@string/changePlanName"
+                android:fontFamily="@font/hangeul_teol_gothic"
+                android:background="@android:color/transparent"
+                android:textCursorDrawable="@drawable/cursor_color"
+                android:layout_centerVertical="true"
+                android:imeOptions="actionDone"
+                android:maxLines="1"
+                android:maxLength="100"/>
+
+            <ImageView
+                android:id="@+id/edit_favorite_image_view"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:background="@drawable/empty_favorite_icon"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="8dp"
+                android:clickable="true"/>
+        </RelativeLayout>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="4dp"
+            android:background="@drawable/shadow_down"/>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:layout_margin="8dp"
+            app:cardBackgroundColor="@color/white"
+            app:cardUseCompatPadding="true">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:weightSum="3"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:id="@+id/edit_date_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:clickable="true"
+                    android:background="?attr/selectableItemBackground"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:id="@+id/edit_calendar_image_view"
+                        android:layout_width="25dp"
+                        android:layout_height="25dp"
+                        android:layout_gravity="center"
+                        android:background="@drawable/disabled_edit_calendar_icon"
+                        android:layout_marginLeft="16dp"/>
+
+                    <TextView
+                        android:id="@+id/edit_to_do_day_text_view"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="일정 기한"
+                        android:fontFamily="@font/hangeul_teol_gothic"
+                        android:textSize="16sp"
+                        android:gravity="center|left"
+                        android:layout_marginLeft="20dp"/>
+
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1.5dp"
+                    android:layout_marginLeft="55dp"
+                    android:layout_marginRight="12dp"
+                    android:background="@drawable/divider"/>
+
+
+                <LinearLayout
+                    android:id="@+id/edit_repeat_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:clickable="true"
+                    android:background="?attr/selectableItemBackground"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:id="@+id/edit_repeat_image_view"
+                        android:layout_width="25dp"
+                        android:layout_height="25dp"
+                        android:layout_gravity="center"
+                        android:background="@drawable/disabled_edit_repeat_icon"
+                        android:layout_marginLeft="16dp"/>
+
+                    <TextView
+                        android:id="@+id/edit_repeat_text_view"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="반복"
+                        android:fontFamily="@font/hangeul_teol_gothic"
+                        android:textSize="16sp"
+                        android:gravity="center|left"
+                        android:layout_marginLeft="20dp"/>
+
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1.5dp"
+                    android:layout_marginLeft="55dp"
+                    android:layout_marginRight="12dp"
+                    android:background="@drawable/divider"/>
+
+
+                <LinearLayout
+                    android:id="@+id/edit_alarm_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:clickable="true"
+                    android:background="?attr/selectableItemBackground"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:id="@+id/edit_alarm_image_view"
+                        android:layout_width="25dp"
+                        android:layout_height="25dp"
+                        android:layout_gravity="center"
+                        android:background="@drawable/disabled_edit_alarm_icon"
+                        android:layout_marginLeft="16dp"/>
+
+                    <TextView
+                        android:id="@+id/edit_alarm_text_view"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="푸시 알림"
+                        android:fontFamily="@font/hangeul_teol_gothic"
+                        android:textSize="16sp"
+                        android:gravity="center|left"
+                        android:layout_marginLeft="20dp"/>
+
+                </LinearLayout>
+
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="3">
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="8dp"
+            android:clickable="true"
+            app:cardBackgroundColor="@color/white"
+            app:cardUseCompatPadding="true">
+
+            <RelativeLayout
+                android:id="@+id/memo_layout"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:clickable="true"
+                android:background="?attr/selectableItemBackgroundBorderless"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/memo_text_view"
+                    android:layout_width="match_parent"
+                    android:layout_height="140dp"
+                    android:layout_marginTop="12dp"
+                    android:layout_marginLeft="12dp"
+                    android:layout_marginRight="12dp"
+                    android:layout_marginBottom="4dp"
+                    android:text="메모장"
+                    android:textColor="@color/defaultDisableColor"
+                    android:maxLines="7"
+                    android:ellipsize="end"
+                    android:fontFamily="@font/hangeul_teol_gothic"
+                    android:textSize="16dp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginBottom="8dp"
+                    android:layout_marginRight="8dp"
+                    android:fontFamily="@font/hangeul_teol_gothic"
+                    android:layout_gravity="right|bottom"
+                    android:text="더 보기"
+                    android:textColor="@color/enableIconColor"
+                    android:textSize="14dp" />
+
+
+            </RelativeLayout>
+
+        </androidx.cardview.widget.CardView>
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1.8"
+        android:orientation="vertical"
+        android:gravity="bottom">
+
+        <!-- 광고 자리 -->
+        <com.google.android.gms.ads.AdView
+            xmlns:ads="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/editAct_adView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_alignParentBottom="true"
+            android:layout_gravity="center"
+            ads:adSize="BANNER"
+            ads:adUnitId="@string/banner_ad_unit_id"
+            android:layout_marginBottom="12dp"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="3dp"
+            android:background="@drawable/shadow_up"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@color/white">
+
+            <TextView
+                android:id="@+id/edit_create_text_view"
+                android:layout_width="200sp"
+                android:layout_height="match_parent"
+                android:layout_gravity="center|left"
+                android:layout_marginLeft="16sp"
+                android:gravity="left|center"
+                android:text="9월 7일 (토)에 생성됨"
+                android:textSize="14sp"/>
+
+            <ImageView
+                android:id="@+id/edit_delete_image_view"
+                android:layout_width="23dp"
+                android:layout_height="23dp"
+                android:layout_gravity="right|center"
+                android:clickable="true"
+                android:background="?attr/selectableItemBackgroundBorderless"
+                android:src="@drawable/trash_icon"
+                android:layout_marginLeft="160dp"/>
+
+        </LinearLayout>
+
+
+
+    </LinearLayout>
+</LinearLayout>

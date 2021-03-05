@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="wrap_content"
+    android:layout_height="300dp">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:text="얼마나 반복하시겠습니까?"
+        android:gravity="left|center"
+        android:textSize="18dp"
+        android:fontFamily="@font/hangeul_teol_gothic"
+        android:layout_marginLeft="24dp"
+        android:layout_marginTop="15dp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginLeft="20dp">
+
+        <EditText
+            android:id="@+id/how_repeat_edit_text"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:text="1"
+            android:maxLength="3"
+            android:inputType="number"
+            android:layout_marginLeft="24dp"/>
+
+        <Spinner
+            android:id="@+id/how_repeat_spinner"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:entries="@array/howRepeat"
+            android:backgroundTint="@color/colorAccent"
+            android:layout_marginLeft="8dp"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/day_select_layout"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp"
+        android:visibility="gone"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <CheckBox
+                android:id="@+id/monday_check_box"
+                android:layout_width="80dp"
+                android:layout_height="30dp"
+                android:buttonTint="@color/colorAccent"
+                android:text="월요일"/>
+
+            <CheckBox
+                android:id="@+id/tuesday_check_box"
+                android:layout_width="80dp"
+                android:layout_height="30dp"
+                android:buttonTint="@color/colorAccent"
+                android:text="화요일"/>
+
+            <CheckBox
+                android:id="@+id/wednesday_check_box"
+                android:layout_width="80dp"
+                android:layout_height="30dp"
+                android:buttonTint="@color/colorAccent"
+                android:text="수요일"/>
+
+            <CheckBox
+                android:id="@+id/thursday_check_box"
+                android:layout_width="80dp"
+                android:layout_height="30dp"
+                android:buttonTint="@color/colorAccent"
+                android:text="목요일"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp">
+
+            <CheckBox
+                android:id="@+id/friday_check_box"
+                android:layout_width="80dp"
+                android:layout_height="30dp"
+                android:buttonTint="@color/colorAccent"
+                android:text="금요일"/>
+
+            <CheckBox
+                android:id="@+id/saturday_check_box"
+                android:layout_width="80dp"
+                android:layout_height="30dp"
+                android:buttonTint="@color/colorAccent"
+                android:text="토요일"/>
+
+            <CheckBox
+                android:id="@+id/sunday_check_box"
+                android:layout_width="100dp"
+                android:layout_height="30dp"
+                android:buttonTint="@color/colorAccent"
+                android:text="일요일"/>
+
+        </LinearLayout>
+
+
+
+
+
+    </LinearLayout>
+
+</LinearLayout>

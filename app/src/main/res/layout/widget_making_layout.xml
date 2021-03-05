@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        >
+
+        <RelativeLayout
+            android:id="@+id/widget_tab"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="3dp"
+            android:gravity="center|left">
+
+            <ImageView
+                android:id="@+id/widget_close_image_view"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:clickable="true"
+                android:background="@null"
+                android:src="@drawable/x_icon"
+                android:tint="@color/x_icon_color"
+                android:layout_margin="15dp"/>
+
+            <TextView
+                android:layout_toRightOf="@id/widget_close_image_view"
+                android:gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="11dp"
+                android:layout_marginLeft="10dp"
+                android:textSize="25sp"
+                android:fontFamily="@font/nanum_square_round_eb"
+                android:text="위젯 생성하기"/>
+
+        </RelativeLayout>
+
+
+        <!--step1-->
+
+        <include layout="@layout/widget_step1_layout"
+            android:id="@+id/step1"
+            android:layout_below="@+id/widget_tab"
+            android:layout_width="match_parent"
+            android:layout_height="330dp" />
+
+        <include layout="@layout/widget_step2_layout"
+            android:id="@+id/step2"
+            android:layout_width="match_parent"
+            android:layout_height="380dp"
+            android:layout_below="@+id/step1"/>
+
+        <include layout="@layout/widget_step3_layout"
+            android:layout_below="@+id/step2"
+            android:layout_width="match_parent"
+            android:layout_height="450dp"/>
+
+    </RelativeLayout>
+
+</ScrollView>

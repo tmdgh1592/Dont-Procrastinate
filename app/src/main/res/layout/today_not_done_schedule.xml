@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="15dp"
+    android:layout_marginRight="15dp"
+    android:layout_marginTop="6dp"
+    android:layout_marginBottom="4dp"
+    android:clickable="true"
+    android:backgroundTint="@color/recyclerViewItemColor"
+    app:cardCornerRadius="30dp"
+    app:cardElevation="3dp">
+
+    <LinearLayout
+        android:id="@+id/not_done_view"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:gravity="center"
+        android:background="?attr/selectableItemBackground"
+        android:orientation="horizontal"
+        android:clickable="true"
+        android:weightSum="10">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1.2"
+            android:gravity="center"
+            android:layout_marginLeft="20dp">
+
+            <CheckBox
+                android:id="@+id/not_done_check_box"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:background="@drawable/custom_check_box"
+                android:button="@null"/>
+
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="8"
+            android:orientation="vertical"
+            android:weightSum="10">
+
+            <TextView
+                android:id="@+id/to_do_text"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_alignParentEnd="true"
+                android:layout_gravity="center"
+                android:layout_marginLeft="4dp"
+                android:layout_weight="6.5"
+                android:ellipsize="end"
+                android:textStyle="bold"
+                android:fontFamily="@font/hangeul_teol_gothic"
+                android:gravity="left|center"
+                android:maxLines="1"
+                android:textColor="@color/white"
+                android:text="야무진 짜파게티 끓이기"
+                android:textSize="16dp"
+                android:layout_marginTop="8dp"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="4"
+                android:orientation="horizontal"
+                android:layout_marginBottom="10dp">
+
+
+                <TextView
+                    android:id="@+id/when_text_view"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBottom="@id/to_do_text"
+                    android:layout_marginLeft="10dp"
+                    android:ellipsize="end"
+                    android:textColor="@color/white"
+                    android:fontFamily="@font/hangeul_teol_gothic"
+                    android:gravity="left"
+                    android:textSize="12dp"
+                    android:text="일정 기한"/>
+
+                <ImageView
+                    android:id="@+id/repeat_image_view"
+                    android:layout_width="13dp"
+                    android:layout_height="13dp"
+                    android:layout_marginLeft="6dp"
+                    android:layout_marginBottom="1dp"
+                    android:background="@drawable/repeat_icon"
+                    android:visibility="gone"/>
+
+                <ImageView
+                    android:id="@+id/alarm_image_view"
+                    android:layout_width="13dp"
+                    android:layout_height="13dp"
+                    android:layout_marginLeft="6dp"
+                    android:layout_marginBottom="1dp"
+                    android:background="@drawable/alarm_icon"
+                    android:visibility="gone"/>
+
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_weight="1.2"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginRight="30dp"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/item_favorite_image_view"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:background="@null"
+                android:clickable="true"
+                android:src="@drawable/item_empty_favorite_icon"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+</androidx.cardview.widget.CardView>

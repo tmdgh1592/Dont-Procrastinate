@@ -1,0 +1,2 @@
+include ':app', ':NativeTemplatesAndroid-1.0.0'
+project(':NativeTemplatesAndroid-1.0.0').projectDir = new File('module/NativeTemplatesAndroid-1.0.0')

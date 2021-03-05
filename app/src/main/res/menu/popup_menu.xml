@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+    <item
+        android:title="더 보기"
+        app:showAsAction="always|never"
+        android:icon="@drawable/dotdotdot">
+
+        <menu>
+            <item
+                android:id="@+id/item_menu1"
+                android:title="오늘의 일정"
+                app:showAsAction="ifRoom"
+                android:icon="@drawable/menu_unselected_calendar_icon"/>
+            <item
+                android:id="@+id/item_menu2"
+                android:title="테마 변경"
+                app:showAsAction="ifRoom"
+                android:icon="@drawable/menu_unselected_theme_icon"/>
+            <item
+                android:id="@+id/item_menu3"
+                android:title="완료된 작업 보기"
+                app:showAsAction="ifRoom"
+                android:icon="@drawable/menu_unselected_done_icon"/>
+            <item
+                android:id="@+id/item_menu4"
+                android:title="정렬 기준"
+                app:showAsAction="ifRoom"
+                android:icon="@drawable/menu_unselected_sort_icon">
+                <menu>
+                    <group>
+                        <item android:id="@+id/sort0"
+                            android:title="중요도"/>
+                        <item android:id="@+id/sort1"
+                            android:title="기한"/>
+                        <item android:id="@+id/sort2"
+                            android:title="등록 날짜"/>
+                        <item android:id="@+id/sort3"
+                            android:title="알림 날짜"/>
+                        <item android:id="@+id/sort4"
+                            android:title="정렬 해제"/>
+                    </group>
+                </menu>
+            </item>
+            <item
+                android:title="목록 삭제"
+                app:showAsAction="ifRoom"
+                android:icon="@drawable/menu_unselected_trash_icon">
+                <menu>
+                    <group>
+                        <item android:id="@+id/delete2"
+                            android:title="완료 일정 삭제"/>
+                        <item android:id="@+id/delete3"
+                            android:title="전체 삭제"/>
+                    </group>
+                </menu>
+            </item>
+        </menu>
+    </item>
+
+
+</menu>

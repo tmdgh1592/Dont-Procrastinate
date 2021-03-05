@@ -1,0 +1,17 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/repeat_every_day"
+        android:title="매일"/>
+    <item
+        android:id="@+id/repeat_every_week"
+        android:title="매주 한 번"/>
+    <item
+        android:id="@+id/repeat_every_month"
+        android:title="매달 한 번"/>
+    <item
+        android:id="@+id/repeat_user_control"
+        android:title="사용자 지정"/>
+    <item
+        android:id="@+id/no_repeat"
+        android:title="반복 안함"/>
+</menu>

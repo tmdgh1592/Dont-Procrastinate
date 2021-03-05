@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Activity.CalendarActivity">
+
+    <LinearLayout
+        android:id="@+id/calendar_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="35dp"
+            android:layout_weight="1"
+            android:layout_gravity="center"
+            android:clickable="true"
+            android:layout_marginLeft="12dp"
+            android:layout_marginRight="12dp"
+            android:layout_marginTop="12dp"
+            android:layout_marginBottom="12dp">
+
+            <ImageView
+                android:id="@+id/back_image_view"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_marginTop="3dp"
+                android:background="?attr/selectableItemBackgroundBorderless"
+                android:src="@drawable/go_back_icon_drawable"
+                android:clickable="true"/>
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="8"
+            android:gravity="left|center"
+            android:text="Schedule"
+            android:textSize="22dp"
+            android:textColor="@color/textColorOne"
+            android:fontFamily="@font/nanum_square_round_eb"/>
+    </LinearLayout>
+
+    <View
+        android:id="@+id/shadow_view"
+        android:layout_width="match_parent"
+        android:layout_height="3dp"
+        android:layout_alignBottom="@+id/calendar_toolbar"
+        android:background="@drawable/shadow_down"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+
+        <com.prolificinteractive.materialcalendarview.MaterialCalendarView xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/calendarView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="60dp"
+            app:mcv_selectionColor="#a9dbf0cb"
+            app:mcv_showOtherDates="defaults"/>
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/calendar_fab"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:src="@drawable/write_todo_icon"
+            app:backgroundTint="#29425E"
+            android:layout_marginBottom="22dp"
+            app:fabSize="auto"
+            app:borderWidth="1dp"
+            app:elevation="5dp"
+            android:layout_marginRight="12dp"/>
+
+    </RelativeLayout>
+
+    <include layout="@layout/add_view_layout"
+        android:visibility="gone"/>
+
+</RelativeLayout>

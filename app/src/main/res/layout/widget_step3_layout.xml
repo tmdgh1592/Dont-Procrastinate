@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:ignore="NamespaceTypo">
+
+    <androidx.cardview.widget.CardView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:card_view="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="450dp"
+        card_view:cardElevation="10dp"
+        card_view:cardCornerRadius="20dp"
+        card_view:cardUseCompatPadding="true">
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <com.makeramen.roundedimageview.RoundedImageView
+                android:id="@+id/imageview_main_image2"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="0.9"
+                android:scaleType="centerCrop"
+                app:riv_corner_radius_top_left="10dp"
+                app:riv_corner_radius_top_right="10dp"
+                android:src="@drawable/widget_step3"
+                app:riv_border_color="#333333"
+                app:riv_mutate_background="true"
+                app:riv_oval="false" />
+
+            <TextView
+                android:layout_margin="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:textSize="15sp"
+                android:textColor="@color/widget_describe_text_color"
+                android:fontFamily="@font/nanum_square_round_b"
+                android:text="@string/widget_desc3" />
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+</LinearLayout>

@@ -1,0 +1,65 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/nightBackgroundColor</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="actionOverflowButtonStyle">@style/AppTheme.OverFlow</item>
+        <item name="android:statusBarColor">@color/nightBackgroundColor</item>
+        <item name="android:colorControlNormal">@color/white</item> <!-- toolbar hamburger, arrow color -->
+    </style>
+
+    <!-- For Splash Screen -->
+
+
+    <!-- 툴바 '...' 색상 -->
+    <style name="AppTheme.OverFlow" parent="Widget.AppCompat.ActionButton.Overflow">
+        <item name="android:tint">@color/white</item>
+    </style>
+
+    <style name="collapsedTitle">
+        <item name="android:textColor">#ffffff</item>
+        <item name="android:fontFamily">@font/nanum_square_round_eb</item>
+    </style>
+
+    <style name="exapndedTitle">
+        <item name="android:textColor">#ffffff</item>
+        <item name="android:fontFamily">@font/nanum_square_round_eb</item>
+    </style>
+
+    android:layout_width="wrap_content"
+    android:layout_height="1dp"
+    android:background="@drawable/divider"
+    android:layout_marginRight="20dp"
+
+    <style name="divide_line_horizontal">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">1dp</item>
+        <item name="android:background">@drawable/divider</item>
+    </style>
+
+    <style name="divide_line_vertical">
+        <item name="android:layout_width">1dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:background">@drawable/divider</item>
+    </style>
+
+    <style name="noti_text_style">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:gravity">left</item>
+        <item name="android:maxLines">1</item>
+        <item name="android:ellipsize">end</item>
+        <item name="android:layout_marginTop">8dp</item>
+        <item name="android:layout_marginRight">14dp</item>
+        <item name="android:layout_marginLeft">3dp</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:textColor">@color/noti_todo_content</item>
+        <item name="android:fontFamily">@font/nanum_gothic</item>
+    </style>
+
+
+</resources>

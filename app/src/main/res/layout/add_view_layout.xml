@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/add_linear_layout"
+    android:layout_width="match_parent"
+    android:layout_height="110dp"
+    android:background="@color/white"
+    android:clickable="true"
+    android:layout_alignParentBottom="true"
+    android:elevation="30dp"
+    android:orientation="vertical">
+
+
+
+    <LinearLayout
+        android:id="@+id/top_layout"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:background="@color/white"
+        android:weightSum="1"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.85">
+            <ImageView
+                android:id="@+id/favorite_image_view"
+                android:layout_width="33dp"
+                android:layout_height="33dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:clickable="true"
+                android:background="@null"
+                android:src="@drawable/empty_favorite_icon"/>
+
+            <com.app.buna.dontdelay.CustomView.BackPressEditText
+                android:id="@+id/add_edit_text"
+                android:layout_width="280dp"
+                android:layout_height="32dp"
+                android:textColor="#000000"
+                android:textSize="16dp"
+                android:hint="해야 할 일을 입력하세요!"
+                android:textStyle="normal"
+                android:layout_marginLeft="12dp"
+                android:layout_marginRight="12dp"
+                android:layout_marginTop="18dp"
+                android:maxLength="100"
+                android:fontFamily="@font/hangeul_teol_gothic"
+                android:background="@android:color/transparent"
+                android:textCursorDrawable="@drawable/cursor_color"
+                android:inputType="text"
+                android:gravity="top"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/write_ok_layout"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.14"
+            android:gravity="center"
+            android:background="@color/white">
+
+
+                <ImageView
+                    android:id="@+id/write_ok_image_view"
+                    android:layout_width="33dp"
+                    android:layout_height="33dp"
+                    android:layout_gravity="center"
+                    android:background="?attr/selectableItemBackgroundBorderless"
+                    android:src="@drawable/unable_write_ok_icon"/>
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    <HorizontalScrollView
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginTop="6dp"
+        android:layout_marginBottom="-4dp"
+        android:gravity="center">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingRight="10dp">
+
+            <LinearLayout
+                android:id="@+id/first_menu_layout"
+                android:layout_width="wrap_content"
+                android:layout_height="33dp"
+                android:layout_marginLeft="12dp"
+                android:background="@drawable/custom_unsetting_layout"
+                android:clickable="true"
+                android:gravity="center"
+                android:paddingRight="10dp"
+                android:paddingLeft="10dp">
+
+
+                <TextView
+                    android:id="@+id/first_menu_text_view"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:fontFamily="@font/hangeul_teol_gothic"
+                    android:gravity="center"
+                    android:text="기한 설정"
+                    android:textColor="#4E4E4E"
+                    android:textSize="13dp" />
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:id="@+id/third_menu_layout"
+                android:layout_width="wrap_content"
+                android:layout_height="33dp"
+                android:layout_marginLeft="8dp"
+                android:background="@drawable/custom_unsetting_layout"
+                android:paddingRight="10dp"
+                android:paddingLeft="10dp">
+
+                <TextView
+                    android:id="@+id/third_menu_text_view"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:fontFamily="@font/hangeul_teol_gothic"
+                    android:gravity="center"
+                    android:text="반복 설정"
+                    android:textColor="#4E4E4E"
+                    android:textSize="13dp" />
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:id="@+id/second_menu_layout"
+                android:layout_width="wrap_content"
+                android:layout_height="33dp"
+                android:layout_marginLeft="8dp"
+                android:background="@drawable/custom_unsetting_layout"
+                android:paddingRight="10dp"
+                android:paddingLeft="10dp">
+
+
+                <TextView
+                    android:id="@+id/second_menu_text_view"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:fontFamily="@font/hangeul_teol_gothic"
+                    android:gravity="center"
+                    android:text="알림 설정"
+                    android:textColor="#4E4E4E"
+                    android:textSize="13dp" />
+
+            </LinearLayout>
+
+
+
+        </LinearLayout>
+
+    </HorizontalScrollView>
+</LinearLayout>

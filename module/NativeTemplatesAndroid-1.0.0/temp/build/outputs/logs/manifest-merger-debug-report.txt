@@ -1,0 +1,37 @@
+-- Merging decision tree log ---
+manifest
+ADDED from /google/src/cloud/jweisbaum/native-templates-android/google3/java/com/google/android/libraries/admob/demo/native_templates/NativeTemplateDemo/nativetemplates/src/main/AndroidManifest.xml:1:1-2:47
+INJECTED from /google/src/cloud/jweisbaum/native-templates-android/google3/java/com/google/android/libraries/admob/demo/native_templates/NativeTemplateDemo/nativetemplates/src/main/AndroidManifest.xml:1:1-2:47
+INJECTED from /google/src/cloud/jweisbaum/native-templates-android/google3/java/com/google/android/libraries/admob/demo/native_templates/NativeTemplateDemo/nativetemplates/src/main/AndroidManifest.xml:1:1-2:47
+INJECTED from /google/src/cloud/jweisbaum/native-templates-android/google3/java/com/google/android/libraries/admob/demo/native_templates/NativeTemplateDemo/nativetemplates/src/main/AndroidManifest.xml:1:1-2:47
+INJECTED from /google/src/cloud/jweisbaum/native-templates-android/google3/java/com/google/android/libraries/admob/demo/native_templates/NativeTemplateDemo/nativetemplates/src/main/AndroidManifest.xml:1:1-2:47
+INJECTED from /google/src/cloud/jweisbaum/native-templates-android/google3/java/com/google/android/libraries/admob/demo/native_templates/NativeTemplateDemo/nativetemplates/src/main/AndroidManifest.xml:1:1-2:47
+INJECTED from /google/src/cloud/jweisbaum/native-templates-android/google3/java/com/google/android/libraries/admob/demo/native_templates/NativeTemplateDemo/nativetemplates/src/main/AndroidManifest.xml:1:1-2:47
+	package
+		ADDED from /google/src/cloud/jweisbaum/native-templates-android/google3/java/com/google/android/libraries/admob/demo/native_templates/NativeTemplateDemo/nativetemplates/src/main/AndroidManifest.xml:2:5-45
+		INJECTED from /google/src/cloud/jweisbaum/native-templates-android/google3/java/com/google/android/libraries/admob/demo/native_templates/NativeTemplateDemo/nativetemplates/src/main/AndroidManifest.xml
+		INJECTED from /google/src/cloud/jweisbaum/native-templates-android/google3/java/com/google/android/libraries/admob/demo/native_templates/NativeTemplateDemo/nativetemplates/src/main/AndroidManifest.xml
+	android:versionName
+		INJECTED from /google/src/cloud/jweisbaum/native-templates-android/google3/java/com/google/android/libraries/admob/demo/native_templates/NativeTemplateDemo/nativetemplates/src/main/AndroidManifest.xml
+		ADDED from /google/src/cloud/jweisbaum/native-templates-android/google3/java/com/google/android/libraries/admob/demo/native_templates/NativeTemplateDemo/nativetemplates/src/main/AndroidManifest.xml:1:1-2:47
+		INJECTED from /google/src/cloud/jweisbaum/native-templates-android/google3/java/com/google/android/libraries/admob/demo/native_templates/NativeTemplateDemo/nativetemplates/src/main/AndroidManifest.xml
+	android:versionCode
+		INJECTED from /google/src/cloud/jweisbaum/native-templates-android/google3/java/com/google/android/libraries/admob/demo/native_templates/NativeTemplateDemo/nativetemplates/src/main/AndroidManifest.xml
+		ADDED from /google/src/cloud/jweisbaum/native-templates-android/google3/java/com/google/android/libraries/admob/demo/native_templates/NativeTemplateDemo/nativetemplates/src/main/AndroidManifest.xml:1:1-2:47
+		INJECTED from /google/src/cloud/jweisbaum/native-templates-android/google3/java/com/google/android/libraries/admob/demo/native_templates/NativeTemplateDemo/nativetemplates/src/main/AndroidManifest.xml
+	xmlns:android
+		ADDED from /google/src/cloud/jweisbaum/native-templates-android/google3/java/com/google/android/libraries/admob/demo/native_templates/NativeTemplateDemo/nativetemplates/src/main/AndroidManifest.xml:1:11-69
+uses-sdk
+INJECTED from /google/src/cloud/jweisbaum/native-templates-android/google3/java/com/google/android/libraries/admob/demo/native_templates/NativeTemplateDemo/nativetemplates/src/main/AndroidManifest.xml reason: use-sdk injection requested
+INJECTED from /google/src/cloud/jweisbaum/native-templates-android/google3/java/com/google/android/libraries/admob/demo/native_templates/NativeTemplateDemo/nativetemplates/src/main/AndroidManifest.xml
+INJECTED from /google/src/cloud/jweisbaum/native-templates-android/google3/java/com/google/android/libraries/admob/demo/native_templates/NativeTemplateDemo/nativetemplates/src/main/AndroidManifest.xml
+INJECTED from /google/src/cloud/jweisbaum/native-templates-android/google3/java/com/google/android/libraries/admob/demo/native_templates/NativeTemplateDemo/nativetemplates/src/main/AndroidManifest.xml
+INJECTED from /google/src/cloud/jweisbaum/native-templates-android/google3/java/com/google/android/libraries/admob/demo/native_templates/NativeTemplateDemo/nativetemplates/src/main/AndroidManifest.xml
+	android:targetSdkVersion
+		INJECTED from /google/src/cloud/jweisbaum/native-templates-android/google3/java/com/google/android/libraries/admob/demo/native_templates/NativeTemplateDemo/nativetemplates/src/main/AndroidManifest.xml
+		ADDED from /google/src/cloud/jweisbaum/native-templates-android/google3/java/com/google/android/libraries/admob/demo/native_templates/NativeTemplateDemo/nativetemplates/src/main/AndroidManifest.xml
+		INJECTED from /google/src/cloud/jweisbaum/native-templates-android/google3/java/com/google/android/libraries/admob/demo/native_templates/NativeTemplateDemo/nativetemplates/src/main/AndroidManifest.xml
+	android:minSdkVersion
+		INJECTED from /google/src/cloud/jweisbaum/native-templates-android/google3/java/com/google/android/libraries/admob/demo/native_templates/NativeTemplateDemo/nativetemplates/src/main/AndroidManifest.xml
+		ADDED from /google/src/cloud/jweisbaum/native-templates-android/google3/java/com/google/android/libraries/admob/demo/native_templates/NativeTemplateDemo/nativetemplates/src/main/AndroidManifest.xml
+		INJECTED from /google/src/cloud/jweisbaum/native-templates-android/google3/java/com/google/android/libraries/admob/demo/native_templates/NativeTemplateDemo/nativetemplates/src/main/AndroidManifest.xml

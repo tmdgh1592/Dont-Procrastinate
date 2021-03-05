@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+    <PreferenceCategory
+        android:key="category1"
+        android:title="알람 설정">
+        <CheckBoxPreference
+            android:title="아침 알림"
+            android:summary="매일 아침마다 오늘 할 일을 알려드립니다."
+            android:key="alarmcheck"
+            android:buttonTint="@color/colorAccent"
+            android:backgroundTint="@color/colorAccent"
+            android:defaultValue="true"/>
+        <ListPreference
+            android:key="morning_push_list"
+            android:title="아침 시간 설정"
+            android:summary="아침 알림 시간대를 설정할 수 있습니다."
+            android:entries="@array/morningPushTimeKeys"
+            android:entryValues="@array/morningPushTimeValues"
+            android:defaultValue="2"
+            android:dependency="alarmcheck"/>
+
+        <EditTextPreference
+            android:key="morning_ment"
+            android:dialogTitle="@string/dialog_title_string"
+            android:backgroundTint="@color/colorAccent"
+            android:title="나만의 멘트"
+            android:summary="아침마다 스스로에게 해주고 싶은 말을 작성합니다."
+            android:dependency="alarmcheck"/>
+    </PreferenceCategory>
+
+    <PreferenceCategory
+        android:key="category2"
+        android:title="백업">
+        <Preference
+            android:key="backup_to_firebase"
+            android:title="데이터 백업"
+            android:summary="현재 기기에 저장되어 있는 일정 데이터를 백업합니다.">
+        </Preference>
+        <Preference
+            android:key="load_from_firebase"
+            android:title="데이터 불러오기"
+            android:summary="백업되어 있는 일정 데이터를 기기에 불러옵니다.\n주의 : 현재 기기에 저장된 일정은 모두 초기화됩니다.">
+        </Preference>
+    </PreferenceCategory>
+
+    <PreferenceCategory android:title="일정 고정">
+        <Preference
+            android:key="noti_on"
+            android:title="고정일정 보이기"
+            android:summary="일정 편집창에서 고정한 일정을 상단 탭에 항상 보이게 합니다."/>
+        <Preference
+            android:key="noti_off"
+            android:title="고정일정 숨기기"
+            android:summary="일정 편집창에서 고정한 일정을 상단 탭에 숨깁니다."/>
+    </PreferenceCategory>
+
+    <!--<PreferenceCategory android:title="권한">
+        <SwitchPreference
+            android:key="camera_permission"
+            android:title="카메라 권한 요청"
+            android:defaultValue="false"
+            android:summary="플래시 기능을 사용하기 위한 권한입니다."/>
+    </PreferenceCategory>-->
+
+    <PreferenceCategory android:title="어플 정보">
+        <Preference
+            android:summary="개발자 및 어플리케이션 정보를 확인합니다."
+            android:title="개발자 정보" >
+            <intent
+                android:targetClass="com.app.buna.dontdelay.Activity.MadeByActivity"
+                android:targetPackage="com.app.buna.dontdelay" />
+        </Preference>
+        <Preference
+            android:summary="개발자에게 메일을 보냅니다."
+            android:title="메일 보내기" >
+            <intent
+                android:action="android.intent.action.SENDTO"
+                android:data="mailto:buna6492@gmail.com" />
+        </Preference>
+    </PreferenceCategory>
+
+    <PreferenceCategory android:title="기타">
+        <Preference android:title="평점 남기기"
+            android:summary="어플에 대한 평가를 남겨주세요!">
+            <intent
+                android:data="market://details?id=com.app.buna.dontdelay"
+                android:action="android.intent.action.VIEW"/>
+        </Preference>
+        <Preference
+            android:key="version_check"
+            android:title="현재 버전"
+            android:summary="@string/app_version">
+            <intent
+                android:data="market://details?id=com.app.buna.dontdelay"
+                android:action="android.intent.action.VIEW"/>
+        </Preference>
+    </PreferenceCategory>
+    <PreferenceCategory android:title="계정">
+        <Preference android:title="로그아웃"
+            android:summary="현재 로그인 되어 있는 계정을 로그아웃 시킵니다."
+            android:key="logout"/>
+    </PreferenceCategory>
+
+
+</PreferenceScreen>

@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal" android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="10dp"
+    android:layout_marginRight="10dp"
+    android:layout_marginTop="10dp">
+
+    <RelativeLayout
+        android:id="@+id/theme_item_view"
+        android:layout_width="180dp"
+        android:layout_height="180dp"
+        android:gravity="center"
+        android:clickable="true">
+
+
+        <com.app.buna.dontdelay.CustomView.CircleImageView
+            android:id="@+id/theme_item_image_view"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:layout_centerInParent="true"
+            android:src="@drawable/theme_example" />
+
+        <CheckBox
+            android:id="@+id/theme_check_box"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:button="@null"
+            android:background="@drawable/custom_theme_check_box"/>
+
+        <TextView
+            android:id="@+id/theme_item_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="어두운 겨울밤"
+            android:fontFamily="@font/nanum_square_round_eb"
+            android:layout_alignBottom="@+id/theme_item_image_view"
+            android:layout_alignParentBottom="true"
+            android:gravity="center"
+            android:textColor="@color/unselectedthemeborderColor"
+            android:textSize="18sp"/>
+
+    </RelativeLayout>
+
+
+</LinearLayout>
