@@ -29,7 +29,6 @@
             android:layout_alignParentBottom="true"
             android:text="@string/backKeyComment"
             android:gravity="center"
-            android:layout_marginLeft="12dp"
             android:background="@color/white"
             android:textColor="#000000"/>
 

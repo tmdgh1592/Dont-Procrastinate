@@ -14,7 +14,7 @@
         android:clickable="true">
 
 
-        <com.app.buna.dontdelay.CustomView.CircleImageView
+        <com.app.buna.dontdelay.customView.CircleImageView
             android:id="@+id/theme_item_image_view"
             android:layout_width="120dp"
             android:layout_height="120dp"

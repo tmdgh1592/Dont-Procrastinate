@@ -51,7 +51,7 @@
                 android:textStyle="bold"
                 android:fontFamily="@font/hangeul_teol_gothic"
                 android:textColor="#222222"
-                android:text="고정한 일정"/>
+                android:text="고정 일정"/>
 
             <ImageView
                 android:layout_width="16dp"

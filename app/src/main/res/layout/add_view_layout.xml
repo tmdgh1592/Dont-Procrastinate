@@ -36,7 +36,7 @@
                 android:background="@null"
                 android:src="@drawable/empty_favorite_icon"/>
 
-            <com.app.buna.dontdelay.CustomView.BackPressEditText
+            <com.app.buna.dontdelay.customView.BackPressEditText
                 android:id="@+id/add_edit_text"
                 android:layout_width="280dp"
                 android:layout_height="32dp"

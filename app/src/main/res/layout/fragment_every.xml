@@ -4,7 +4,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/custom_layout_background"
-    tools:context=".Fragment.EveryFragment">
+    tools:context=".fragment.EveryFragment">
 
     <!--<TextView
         android:layout_width="match_parent"
