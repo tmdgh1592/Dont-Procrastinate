@@ -236,6 +236,9 @@ public class MainActivity extends AppCompatActivity {
     public final int REQUEST_TO_PREF_ACTIVITY_CODE = 4000;
     private Toolbar toolbar;
 
+    AlertDialog.Builder exitBuilder;
+    AlertDialog exitDialog;
+
     private View howRepeatView;
 
     AlertDialog.Builder builder;
@@ -424,6 +427,17 @@ public class MainActivity extends AppCompatActivity {
         enterToDoEditText.addTextChangedListener(editTextWatcher);
         editTextWatcher.setResource(getResources(), writeOkImageView, writeOkLayout);
 
+        exitBuilder = new AlertDialog.Builder(MainActivity.this);
+        exitBuilder.setView(exitView);
+        exitBuilder.setCancelable(false);
+        exitBuilder.setPositiveButton("종료", (dialogInterface, i) -> finishAffinity());
+        exitBuilder.setNegativeButton("취소", (dialogInterface, i) -> {
+
+        });
+
+        exitDialog = exitBuilder.create();
+        exitDialog.setContentView(R.layout.custom_toast_back_press);
+        exitDialog.setCanceledOnTouchOutside(false);
 
         mContext = getApplicationContext();
 
@@ -2049,33 +2063,19 @@ public class MainActivity extends AppCompatActivity {
     @SuppressLint("RestrictedApi")
     @Override
     public void onBackPressed() {
-        AlertDialog.Builder builder;
-        final AlertDialog exitDialog;
 
         if (drawerLayout.isDrawerOpen(drawerView)) {
             drawerLayout.closeDrawer(drawerView);
             return;
         }
 
-
         if (addLinearLayout.getVisibility() == GONE && isKeyBoardView == false) {
-            builder = new AlertDialog.Builder(MainActivity.this);
-            builder.setView(exitView);
-            builder.setCancelable(false);
-            builder.setPositiveButton("종료", (dialogInterface, i) -> finishAffinity());
-            builder.setNegativeButton("취소", (dialogInterface, i) -> {
+            if (!exitDialog.isShowing()) {                    // dialog가 열려있는 경우 : 앱을 종료해야함
+                try {
+                    exitDialog.show();
+                } catch (IllegalStateException e) {
 
-            });
-
-            exitDialog = builder.create();
-            exitDialog.setContentView(R.layout.custom_toast_back_press);
-            exitDialog.setCanceledOnTouchOutside(false);
-
-            if (exitDialog.isShowing()) {                    // dialog가 열려있는 경우 : 앱을 종료해야함
-                // the problem is clear.
-            } else {
-                exitDialog.show();
-
+                }
             }
         }
         if (isKeyBoardView) {

@@ -6,8 +6,8 @@ android {
         applicationId "com.app.buna.dontdelay"
         minSdkVersion 21
         targetSdkVersion 29
-        versionCode 22
-        versionName "1.0.7"
+        versionCode 24
+        versionName "1.0.8"
         resConfigs "en", "kr"
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
     }
