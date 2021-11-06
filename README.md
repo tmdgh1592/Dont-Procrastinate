@@ -1,6 +1,6 @@
 # Dont-Procrastinate
 
-[![Build Status](https://travis-ci.org/afollestad/mnml.svg)](https://travis-ci.org/afollestad/mnml)
+[![Build Status](https://img.shields.io/badge/build-completed-green)](https://github.com/tmdgh1592/Dont-Procrastinate/)
 [![License](https://img.shields.io/badge/license-Apache%202-4EB1BA.svg?style=flat-square)](https://www.apache.org/licenses/LICENSE-2.0.html)
 [![Codacy Badge](https://api.codacy.com/project/badge/Grade/e692f8f048854f0b9a962c0c9f5e3ac0)](https://www.codacy.com/app/drummeraidan_50/mnml?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=afollestad/mnml&amp;utm_campaign=Badge_Grade)
 
