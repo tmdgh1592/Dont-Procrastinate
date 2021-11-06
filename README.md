@@ -10,6 +10,8 @@
 ![graphic_image](https://user-images.githubusercontent.com/56534241/140594919-fdb7030d-7f75-428f-a773-5864e897c3d7.png)
 ![github](https://user-images.githubusercontent.com/56534241/140595912-6daf868c-9e10-439c-855a-682bae3b313d.png)
 
+<br/>
+
 + [개발 인원] - 1인 개발 / 토이 프로젝트
 
 + [개발 기간] - 2019/08 - 2019/10
