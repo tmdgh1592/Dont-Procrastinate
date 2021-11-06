@@ -31,7 +31,10 @@
 
 <br/>
 <br/>
+
 **Redistributing this app as your own is NOT permitted.**
+
 <br/>
 <br/>
+
 <a href="https://play.google.com/store/apps/details?id=com.app.buna.dontdelay"><img alt="Get it on Google Play" src="https://play.google.com/intl/en_us/badges/images/generic/en_badge_web_generic.png" width="200px"/></a>
