@@ -1,7 +1,7 @@
 # Dont-Procrastinate
 
 [![Build Status](https://img.shields.io/badge/build-completed-success)](https://github.com/tmdgh1592/Dont-Procrastinate/)
-![License](https://img.shields.io/apm/l/vim-mode?color=greenorange)
+![License](https://img.shields.io/apm/l/vim-mode?color=orangegreen)
 [![Framework](https://img.shields.io/badge/framework-android-green)](https://developer.android.com/)
 
 # 미루지마
