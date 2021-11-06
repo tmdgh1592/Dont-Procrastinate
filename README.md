@@ -7,7 +7,7 @@
 # 미루지마
 
 
-<a href="https://user-images.githubusercontent.com/56534241/140594919-fdb7030d-7f75-428f-a773-5864e897c3d7.png"> src="https://user-images.githubusercontent.com/56534241/140594919-fdb7030d-7f75-428f-a773-5864e897c3d7.png" width="600px" height="300px"/></a>
+<a href="https://user-images.githubusercontent.com/56534241/140594919-fdb7030d-7f75-428f-a773-5864e897c3d7.png" src="https://user-images.githubusercontent.com/56534241/140594919-fdb7030d-7f75-428f-a773-5864e897c3d7.png" width="600px" height="300px"/></a>
 
 ![graphic_image](https://user-images.githubusercontent.com/56534241/140594919-fdb7030d-7f75-428f-a773-5864e897c3d7.png)
 
