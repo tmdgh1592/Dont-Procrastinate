@@ -7,9 +7,9 @@
 # 미루지마
 
 
-<a href="https://user-images.githubusercontent.com/56534241/140594919-fdb7030d-7f75-428f-a773-5864e897c3d7.png" src="https://user-images.githubusercontent.com/56534241/140594919-fdb7030d-7f75-428f-a773-5864e897c3d7.png" width="600px" height="300px"/></a>
-
 ![graphic_image](https://user-images.githubusercontent.com/56534241/140594919-fdb7030d-7f75-428f-a773-5864e897c3d7.png)
+![github](https://user-images.githubusercontent.com/56534241/140595912-6daf868c-9e10-439c-855a-682bae3b313d.png)
+
 
 **Redistributing this app as your own is NOT permitted.**
 
