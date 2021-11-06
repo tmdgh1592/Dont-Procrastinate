@@ -8,7 +8,7 @@
 
 
 
-![graphic_image](https://user-images.githubusercontent.com/56534241/140594919-fdb7030d-7f75-428f-a773-5864e897c3d7.png)
+![graphic_image](https://user-images.githubusercontent.com/56534241/140594919-fdb7030d-7f75-428f-a773-5864e897c3d7.png src='width=600 height=300')
 
 **Redistributing this app as your own is NOT permitted.**
 
