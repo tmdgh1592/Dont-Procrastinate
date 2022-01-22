@@ -3,6 +3,8 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Users/user1/AndroidStudioProjects/DontDelay/app/src/main/res/layout/activity_calendar.xml" value="0.13179347826086957" />
+        <entry key="..\:/Users/user1/AndroidStudioProjects/DontDelay/app/src/main/res/layout/calendar_date.xml" value="0.20625" />
         <entry key="..\:/Users/user1/AndroidStudioProjects/DontDelay/app/src/main/res/layout/custom_toast_back_press.xml" value="0.20677083333333332" />
         <entry key="..\:/Users/user1/AndroidStudioProjects/DontDelay/module/NativeTemplatesAndroid-1.0.0/src/main/res/layout/gnt_medium_template_view.xml" value="0.20677083333333332" />
       </map>

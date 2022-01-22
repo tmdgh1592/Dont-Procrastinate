@@ -63,7 +63,7 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="60dp"
             app:mcv_selectionColor="#a9dbf0cb"
-            app:mcv_showOtherDates="defaults"/>
+            app:mcv_showOtherDates="defaults" />
 
         <com.google.android.material.floatingactionbutton.FloatingActionButton
             android:id="@+id/calendar_fab"

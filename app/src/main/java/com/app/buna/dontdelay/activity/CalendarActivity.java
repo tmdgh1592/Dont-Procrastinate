@@ -82,13 +82,7 @@ public class CalendarActivity extends AppCompatActivity implements View.OnClickL
 
     private PopupMenu popupMenu;
 
-    String[] weekDay = { getString(R.string.sunday),
-            getString(R.string.monday),
-            getString(R.string.tuesday),
-            getString(R.string.wednesday),
-            getString(R.string.thursday),
-            getString(R.string.friday),
-            getString(R.string.saturday) };
+    String[] weekDay;
 
     private MaterialCalendarView materialCalendarView;
     String time,kcal,menu;
@@ -169,6 +163,14 @@ public class CalendarActivity extends AppCompatActivity implements View.OnClickL
 
         SimpleDateFormat sdf = new SimpleDateFormat("yyyy-MM-dd");
         String dateFormat = sdf.format(new Date());
+
+        weekDay = new String[]{ getString(R.string.sunday),
+                getString(R.string.monday),
+                getString(R.string.tuesday),
+                getString(R.string.wednesday),
+                getString(R.string.thursday),
+                getString(R.string.friday),
+                getString(R.string.saturday) };
 
         materialCalendarView = (MaterialCalendarView)findViewById(R.id.calendarView);
         materialCalendarView.state().edit()
